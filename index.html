@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: block;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .kotak{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            display: flex;/*Buat kata kata didalam kotak ke tengah*/
+        }
+        .container {
+            display: flex;
+            width: 500px;
+            height:100vh;
+            background-color: rgb(25, 0, 255);
+            flex-wrap: wrap;
+            gap: 10px;/*Membuat jarak antara kotak di container*/
+        }
+    </style>
 </head>
 <body>
-    <center>
-    <marquee>
-<h1>Welcome guyss</h1>
-    </marquee>
-    </center>
-
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+    <div class="kotak" style="background-color: deepskyblue;">kotak 1</div>
+    <div class="kotak" style="background-color: deepskyblue;">kotak 2</div>
+    <div class="kotak" style="background-color: deepskyblue;;">kotak 3</div>
+    <div class="kotak" style="background-color: darkgoldenrod;">kotak 4</div>
+    <div class="kotak" style="background-color: darkgoldenrod;">kotak 5</div>
+    <div class="kotak" style="background-color: darkgoldenrod;">kotak 6</div>
+    <div class="kotak" style="background-color: salmon;">kotak 7</div>
+    <div class="kotak" style="background-color: salmon;">kotak 8</div>
+    <div class="kotak" style="background-color: salmon;">kotak 9</div>
+    </div>
 </body>
 </html>
